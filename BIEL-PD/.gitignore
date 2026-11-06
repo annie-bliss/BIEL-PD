@@ -1,0 +1,15 @@
+.venv/
+venv/
+__pycache__/
+*.py[cod]
+.pytest_cache/
+.env*
+!.env.example
+node_modules/
+dist/
+*.log
+.DS_Store
+Thumbs.db
+
+backend/artifacts/*.joblib
+!backend/artifacts/biel_pd.joblib

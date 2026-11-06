@@ -1,0 +1,3 @@
+import { Database, SlidersHorizontal, BrainCircuit, Crosshair, ShieldCheck } from 'lucide-react'
+const steps=[['Dataset','PhiUSIIL',Database],['Preprocessing','MinMax scaling',SlidersHorizontal],['AIS engine','300 detectors',BrainCircuit],['Threshold search','Validation F1',Crosshair],['Decision','Phishing / benign',ShieldCheck]]
+export default function PipelineFlow(){return <div className="pipeline">{steps.map(([title,desc,Icon],i)=><div className="pipeline-step" key={title}><div className="pipeline-icon"><Icon size={18}/></div><div><b>{title}</b><small>{desc}</small></div>{i<steps.length-1&&<div className="pipeline-arrow">›</div>}</div>)}</div>}
